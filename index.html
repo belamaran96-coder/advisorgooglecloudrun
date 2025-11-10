@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthAssist AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏥 HealthAssist AI</h1>
+      <p>Your 24/7 Healthcare Assistant</p>
+      <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <div class="disclaimer">
+      <p><strong>⚠️ Note:</strong> I’m an AI assistant providing general health information only. For emergencies, contact a doctor immediately.</p>
+    </div>
+
+    <div class="chat-container">
+      <div id="chat-messages" class="chat-messages">
+        <div class="message bot-message">
+          <p>Hello! I'm HealthAssist AI. I can assist with:</p>
+          <ul>
+            <li>Health and wellness information</li>
+            <li>Symptom guidance</li>
+            <li>Medication details</li>
+            <li>Healthy lifestyle advice</li>
+            <li>First aid steps</li>
+          </ul>
+          <p><strong>Disclaimer:</strong> I am not a doctor. Please consult professionals for medical advice.</p>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <textarea id="user-input" placeholder="Describe your symptoms or ask a question..."></textarea>
+        <button id="send-btn">Send</button>
+      </div>
+
+      <div class="quick-questions">
+        <p>Quick Topics:</p>
+        <button class="quick-btn" data-question="What are common symptoms of flu?">Flu Symptoms</button>
+        <button class="quick-btn" data-question="How to manage stress?">Stress Management</button>
+        <button class="quick-btn" data-question="First aid for fever">Fever Aid</button>
+        <button class="quick-btn" data-question="Healthy diet tips">Diet Tips</button>
+      </div>
+
+      <div class="chat-controls">
+        <button id="clear-chat-btn">🗑️ Clear Chat</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Powered by Gemini AI | Built for Serverless Deployment</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
